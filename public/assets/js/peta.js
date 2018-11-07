@@ -36,15 +36,16 @@ function showLocation(e) {
 
 
 (async function (){
-  const URL = "../assets/js/peta.json";
-  try{
-    const resp = await(fetch(url));
-    const resp2 = await resp.json();
-    localStorage.setItem('places', JSON.stringify(resp2.places));
-  } catch(err) {
+  const URL="../project3/data/peta.json";
+  try {
+    let resp= await(fetch(URL));
+    let resp2= await resp.json();
+    localStorage.setItem('places',JSON.stringify(resp2.places));//
+  }
+  catch(err){
     console.log(err);
   }
-}) ( ); // <--- IIFE
+})( ); // <--- IIFE
 
 let gmb= document.getElementById("gmb");
 let rev= document.getElementById("review");
@@ -71,24 +72,24 @@ let places= [
 ];*/
 
 
-/*fetch(URL)
+const URL="../project3/data/peta.json";
+// Fetch
+fetch(URL)
   .then(function(response){
-    if (response.status !== 200) {
-      // HTTP Status
-      console.log('Ada masalah, Status Code : ' + response.status);
-      // throw response.statusText;
-      return;
-    }
-    return response.json()
+      if (response.status !== 200) {
+          console.log('There is a problem . Status Code: ' + response.status);
+          throw response.statusText;
+      }
+      return response.json()
   })
-  .then(resp => {
-    let places = resp.places;
-    localStorage.setItem('places', JSON.stringify(resp.places));
+  .then ( resp => {
+      localStorage.setItem('places', JSON.stringify(resp.places));
+      setView();
   })
   .catch(function(err){
-    console.log(err);
+      console.log(err);
   });
-let places = JSON.parse(localStorage.getItem('places'));*/
+// let places = JSON.parse(localStorage.getItem('places'));
 
 for (var p of places) {
   var marker= L.marker(p.lokasi).addTo(mymap).bindPopup(p.sponsor);

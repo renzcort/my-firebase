@@ -1,0 +1,22 @@
+{
+  "places" : [
+    {
+      "location": [46.234168, 6.052926],
+      "title"   : "CERN",
+      "image"   :"data/images/1.jpg",
+      "review"  : "<p> There are many other benefits to the summer program at CERN, both personal and professional. Here are some of them: </p><ol><li>See first-hand how large-scale physics experiments work.</li><li>Get some useful programming experience with C++ and ROOT.</li><li>Meet bright people from all over the world.</li><li>Receive lectures from some of the top scientists in the world.</li></ol><p><a href='https://www.quora.com/What-are-some-benefits-or-perks-of-spending-the-summer-and-working-at-CERN' target='_blank' rel='noreferrer'>Barak Shoshany's Answer on Quora</a></p>"
+    },
+    {
+      "location": [48.8286238, 2.2718874],
+      "title"   : "SoftBank Robotics",
+      "image"   :"data/images/2.jpg",
+      "review"  : "<p>The Power of Robotics to Benefit Humanity. We create robots and services that define the role robotics play in our lives now, and in the future.</p><ul><li>Pepper, The world’s first humanoid with an emotion engine.</li><li>Nao, Small bipedal assistant.</li></ul>"
+    },
+    {
+      "location": [47.3900586, 8.5141361],
+      "title"   : "ETH Zurich",
+      "image"   :"data/images/3.jpg",
+      "review"  : "<p>ETH Zurich is a science, technology, engineering and mathematics university in the city of Zürich, Switzerland. Historically, ETH Zurich has achieved its reputation particularly in the fields of chemistry, mathematics and physics. Albert Einstein is perhaps its most famous alumnus.</p>"
+    }
+  ]
+}
