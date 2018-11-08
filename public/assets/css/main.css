@@ -1,8 +1,3 @@
-body, html, #mapid {
-	padding: 0;
-	margin: 0;
-}
-
 body {
 	padding: 0;
 	margin: 0;
@@ -79,10 +74,12 @@ body {
 
 /*mapbox*/
 .container.leaflet {
-	display: grid;
-	grid-gap: 4px;
-	grid-template-columns: repeat(4, 1fr);
-	grid-template-rows: auto 150% 60% auto;
+  display: grid;
+  grid-template-columns: repeat(8,1fr);
+  grid-template-rows: auto 50vh auto;
+  grid-gap: 8px;
+  max-width: 900px;
+  margin: 8px auto;
 }
 
 .peta {
@@ -91,23 +88,27 @@ body {
 
 .gambar {
 	background: green;
-	grid-column: 1/3;
+	grid-column: 1/5;
+  max-height: 225px;
 }
 
 .gambar img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  max-height: 225px;
+  border: 1px solid;
 }
 
 .review {
 	background: yellow;
-	grid-column: 3/-1;
-    line-height: 30px;
-    padding: 20px;
+	grid-column: 5/-1;
+    line-height: 15px;
+    padding: 5px;
 }
 
 #mapid {
 	height: auto;
+  width: 100%;
 }
